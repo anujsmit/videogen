@@ -1,11 +1,11 @@
 {
-  "model": "Samsung Galaxy S26 5G",
+  "model": "Google Pixel 10 Pro",
   "specs": [
-    { "label": "Display", "value": "6.8-inch AMOLED, 120Hz" },
-    { "label": "Processor", "value": "Snapdragon 8 Gen 4" },
-    { "label": "Camera", "value": "50MP Main Camera" },
-    { "label": "Battery", "value": "5000mAh, All-day Use" },
-    { "label": "RAM", "value": "12GB" },
-    { "label": "Storage", "value": "256GB" }
+    { "label": "Display", "value": "6.7 inches" },
+    { "label": "Camera", "value": "50MP" },
+    { "label": "Battery", "value": "5100mAh" },
+    { "label": "RAM", "value": "16GB" },
+    { "label": "Resolution", "value": "FHD" },
+    { "label": "Storage", "value": "16GB" }
   ]
 }

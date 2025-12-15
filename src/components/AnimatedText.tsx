@@ -22,14 +22,15 @@ export const AnimatedText: React.FC<{ text: string }> = ({ text }) => {
   return (
     <div
       style={{
-        fontSize: 60,
-        fontWeight: 700,
+        fontSize: 100, // Changed from 60 to 100 for a bolder title
+        fontWeight: 900, // Changed from 700 to 900 for a bolder title
         lineHeight: 1.3,
         color: "white",
         textShadow: "0 6px 30px rgba(0,0,0,0.6)",
         opacity,
         transform: `translateY(${translateY}px)`,
-        maxWidth: 720,
+        maxWidth: 1400, // Increased max width for longer titles
+        textAlign: "center"
       }}
     >
       {text}
