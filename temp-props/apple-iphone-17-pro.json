@@ -1,0 +1,36 @@
+{
+  "device": {
+    "model": "Apple iPhone 17 Pro",
+    "overview": "Apple's 2025 powerhouse, introducing the A19 Pro chip and a new 'Air' thin-profile design philosophy.",
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.3-inch Super Retina XDR",
+        "description": "Features ProMotion technology with a 120Hz refresh rate and the new ultra-durable Ceramic Shield."
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Triple Lens",
+        "description": "Fully upgraded 48MP sensors across all lenses—Wide, Ultrawide, and Telephoto—for consistent detail."
+      },
+      {
+        "label": "Battery",
+        "value": "4422mAh",
+        "description": "Enhanced energy efficiency providing up to 29 hours of video playback."
+      },
+      {
+        "label": "RAM",
+        "value": "12GB",
+        "description": "Increased memory capacity to support the latest Apple Intelligence features and multitasking."
+      },
+      {
+        "label": "Storage",
+        "value": "256GB",
+        "description": "Standard high-speed NVMe storage, ideal for ProRes video recording."
+      }
+    ],
+    "images": {
+      "img1": "https://media.gadgetbytenepal.com/2025/09/1757575348_0.jpg"
+    }
+  }
+}

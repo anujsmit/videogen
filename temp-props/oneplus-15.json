@@ -1,0 +1,36 @@
+{
+  "device": {
+    "model": "OnePlus 15",
+    "overview": "A performance-first flagship known for the 'Battery King' title in 2025, featuring industry-leading charging speeds.",
+    "specs": [
+      {
+        "label": "Display",
+        "value": "6.82-inch LTPO AMOLED",
+        "description": "A stunning 2K resolution display with 165Hz refresh rate for the smoothest gaming experience."
+      },
+      {
+        "label": "Camera",
+        "value": "50MP Hasselblad System",
+        "description": "Co-developed with Hasselblad for natural color calibration and superior portrait photography."
+      },
+      {
+        "label": "Battery",
+        "value": "7300mAh",
+        "description": "A massive silicon-carbon battery that supports 120W wired and 50W wireless charging."
+      },
+      {
+        "label": "RAM",
+        "value": "16GB",
+        "description": "Built for speed with the latest Snapdragon 8 Elite Gen 5 chipset integration."
+      },
+      {
+        "label": "Storage",
+        "value": "512GB",
+        "description": "UFS 4.1 storage offering lightning-fast data transfer and app loading."
+      }
+    ],
+    "images": {
+      "img1": "https://ezoix.com/wp-content/uploads/2025/12/OnePlus-15-Full-Specs-Price.jpg"
+    }
+  }
+}

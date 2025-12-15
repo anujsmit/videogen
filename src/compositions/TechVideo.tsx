@@ -1,39 +1,27 @@
-import { AbsoluteFill, Sequence, Audio, useVideoConfig } from "remotion";
-import deviceData from "../../data/device.json";
+import { AbsoluteFill, Sequence, Audio } from "remotion";
 import { ResponsiveFeatureSlide } from "../components/ResponsiveFeatureSlide";
 
-// TIMING
-const SLIDE_DURATION = 120;
-const START_DELAY = 15;
-
-export const TechVideo: React.FC = () => {
-  const { fps } = useVideoConfig();
+export const TechVideo = ({ device }: { device: any }) => {
+  const SLIDE_DURATION = 170;
 
   return (
-    <AbsoluteFill style={{ backgroundColor: "#ffffff" }}>
-      
-      {/* Background Music */}
+    <AbsoluteFill style={{ background: "#fff" }}>
       <Audio src="https://ezoix.com/wp-content/uploads/2025/12/music.wav" volume={0.4} />
 
-      {/* Feature Slides */}
-      {deviceData.specs.map((spec, index) => {
-        const from = START_DELAY + index * SLIDE_DURATION;
-
-        return (  
-          <Sequence
-            key={index}
-            from={from}
-            durationInFrames={SLIDE_DURATION}
-          >
-            <ResponsiveFeatureSlide
-              title={spec.label}
-              value={spec.value}
-              description={spec.description}
-              image={deviceData.images.img1}
-            />
-          </Sequence>
-        );
-      })}
+      {device.specs.map((spec: any, index: number) => (
+        <Sequence
+          key={index}
+          from={index * SLIDE_DURATION}
+          durationInFrames={SLIDE_DURATION}
+        >
+          <ResponsiveFeatureSlide
+            title={spec.label}
+            value={spec.value}
+            description={spec.description}
+            image={device.images.img1}
+          />
+        </Sequence>
+      ))}
     </AbsoluteFill>
   );
 };
