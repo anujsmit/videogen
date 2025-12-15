@@ -1,5 +1,4 @@
-import { loadFont } from "@remotion/google-fonts/Anton";
-
+import { loadFont } from "@remotion/google-fonts/Inter"; 
 export const loadFonts = () => {
-  loadFont();
+  loadFont(); 
 };

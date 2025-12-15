@@ -3,32 +3,32 @@ import fs from "fs";
 import path from "path";
 import { devices } from "../data/device.js";
 
-const outDir = path.resolve("out");
-const tempDir = path.resolve("temp-props");
+const root = process.cwd();
+const outDir = path.join(root, "out");
+const tempDir = path.join(root, "temp-props");
 
-if (!fs.existsSync(outDir)) fs.mkdirSync(outDir);
-if (!fs.existsSync(tempDir)) fs.mkdirSync(tempDir);
+fs.mkdirSync(outDir, { recursive: true });
+fs.mkdirSync(tempDir, { recursive: true });
 
-devices.forEach((device) => {
-  const safeName = device.model
-    .toLowerCase()
-    .replace(/\s+/g, "-")
-    .replace(/[^\w-]/g, "");
+try {
+  devices.forEach((device) => {
+    const safeName = device.model
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^\w-]/g, "");
 
-  console.log(`🎬 Rendering: ${device.model}`);
+    console.log(`\n🎬 Rendering: ${device.model}`);
 
-  // 1️⃣ Write temp props file
-  const propsPath = path.join(tempDir, `${safeName}.json`);
-  fs.writeFileSync(
-    propsPath,
-    JSON.stringify({ device }, null, 2),
-    "utf-8"
-  );
+    const propsPath = path.join(tempDir, `${safeName}.json`);
+    fs.writeFileSync(propsPath, JSON.stringify({ device }, null, 2));
 
-  // 2️⃣ Render using props FILE (not inline JSON)
-  execSync(
-    `npx remotion render src/index.ts TechVideo ${outDir}/${safeName}.mp4 ` +
-      `--props=${propsPath} --codec=h264`,
-    { stdio: "inherit" }
-  );
-});
+    execSync(
+      `npx remotion render src/index.ts TechVideo out/${safeName}.mp4 --props=${propsPath} --codec=h264`,
+      { stdio: "inherit" }
+    );
+
+    console.log(`✅ Exported: ${safeName}.mp4`);
+  });
+} finally {
+  fs.rmSync(tempDir, { recursive: true, force: true });
+}

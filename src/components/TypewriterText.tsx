@@ -1,5 +1,5 @@
 import React from "react";
-import { useCurrentFrame } from "remotion";
+import { useCurrentFrame, spring, useVideoConfig } from "remotion";
 
 interface TypewriterTextProps {
   text: string;
@@ -15,11 +15,23 @@ export const TypewriterText: React.FC<TypewriterTextProps> = ({
   style,
 }) => {
   const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
 
   const words = text.split(" ");
+  // Calculate the step (how many words have been revealed)
   const steps = Math.floor(frame / stepFrames) * wordsPerStep;
   const visibleWords = words.slice(0, steps).join(" ");
   const isTyping = steps < words.length;
+
+  // Spring-based blinking cursor for a smoother look
+  const cursorOpacity = spring({
+    frame: frame % 30, // Loop the animation every 30 frames
+    fps,
+    config: { damping: 200, stiffness: 200, mass: 1 },
+    from: 1,
+    to: 0,
+    durationInFrames: 15,
+  });
 
   return (
     <p style={style}>
@@ -28,7 +40,7 @@ export const TypewriterText: React.FC<TypewriterTextProps> = ({
         <span
           style={{
             marginLeft: 4,
-            opacity: Math.floor(frame / 15) % 2,
+            opacity: cursorOpacity, // Use spring for the blink effect
           }}
         >
           |

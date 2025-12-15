@@ -4,7 +4,7 @@ import {
     Img,
     useVideoConfig,
     useCurrentFrame,
-    interpolate,
+    spring, // Using spring for smoother animation
 } from "remotion";
 import { TypewriterText } from "./TypewriterText";
 
@@ -21,28 +21,39 @@ export const ResponsiveFeatureSlide: React.FC<ResponsiveFeatureSlideProps> = ({
     description,
     image,
 }) => {
-    const { width, height } = useVideoConfig();
+    const { width, height, fps } = useVideoConfig();
     const frame = useCurrentFrame();
 
     // Detect orientation
     const isVertical = height > width;
 
-    // Universal scale (safe for all resolutions)
+    // Universal scale (safe for all resolutions based on 1920x1080)
     const scale = Math.min(width / 1920, height / 1080);
 
-    // Animations
-    const slideY = interpolate(frame, [0, 25], [40 * scale, 0], {
-        extrapolateRight: "clamp",
+    // Animations using spring for cinematic motion
+    const slideInDistance = 40 * scale;
+    const springValue = spring({
+        frame,
+        fps,
+        config: { damping: 200, stiffness: 200 },
+        durationInFrames: 45,
     });
 
-    const fade = interpolate(frame, [0, 25], [0, 1], {
-        extrapolateRight: "clamp",
+    // Y-offset moves from slideInDistance to 0
+    const slideY = (1 - springValue) * slideInDistance;
+
+    // Opacity fades from 0 to 1
+    const fade = spring({
+        frame,
+        fps,
+        config: { damping: 200, stiffness: 400 },
+        durationInFrames: 35,
     });
 
     return (
         <AbsoluteFill
             style={{
-                backgroundColor: "#ffffff",
+                backgroundColor: "#1a1a1a",
                 padding: `${width * 0.06}px`,
                 fontFamily: "Inter, system-ui, sans-serif",
             }}
@@ -75,7 +86,7 @@ export const ResponsiveFeatureSlide: React.FC<ResponsiveFeatureSlideProps> = ({
                             width: isVertical ? "60%" : "80%",
                             maxHeight: height * 0.75,
                             objectFit: "contain",
-                            filter: "drop-shadow(0 30px 60px rgba(0,0,0,0.25))",
+                            filter: "drop-shadow(0 15px 30px rgba(0,0,0,0.4))",
                         }}
                     />
                 </div>
@@ -92,18 +103,18 @@ export const ResponsiveFeatureSlide: React.FC<ResponsiveFeatureSlideProps> = ({
                         style={{
                             display: "flex",
                             justifyContent: "space-between",
+                            flexDirection: "column",
                             alignItems: "baseline",
                             marginBottom: 28 * scale,
                         }}
                     >
                         <h1
                             style={{
-                                fontFamily: "Anton, sans-serif",
                                 fontSize: 72 * scale,
-                                fontWeight: 400, // Anton only has one weight
-                                letterSpacing: "1px",
+                                fontWeight: 700,
+                                letterSpacing: "-1px",
                                 margin: 0,
-                                color: "#000",
+                                color: "#ffffff",
                             }}
                         >
                             {title}
@@ -111,10 +122,10 @@ export const ResponsiveFeatureSlide: React.FC<ResponsiveFeatureSlideProps> = ({
 
                         <span
                             style={{
-                                fontFamily: "Anton, sans-serif",
                                 fontSize: 56 * scale,
+                                fontWeight: 400,
                                 letterSpacing: "0.5px",
-                                color: "#000",
+                                color: "#999999",
                                 whiteSpace: "nowrap",
                             }}
                         >
@@ -130,13 +141,12 @@ export const ResponsiveFeatureSlide: React.FC<ResponsiveFeatureSlideProps> = ({
                         style={{
                             fontSize: 36 * scale,
                             lineHeight: 1.7,
-                            fontWeight: 400,
-                            color: "#333",
+                            fontWeight: 300,
+                            color: "#dddddd",
                             maxWidth: 700 * scale,
                             fontFamily: "Inter, system-ui, sans-serif",
                         }}
                     />
-
                 </div>
             </div>
 
@@ -146,10 +156,10 @@ export const ResponsiveFeatureSlide: React.FC<ResponsiveFeatureSlideProps> = ({
                     position: "absolute",
                     right: width * 0.04,
                     bottom: height * 0.04,
-                    fontFamily: "Anton, sans-serif",
+                    fontFamily: "Inter, sans-serif",
                     fontSize: 18 * scale,
-                    background: "#000",
-                    color: "#fff",
+                    background: "#333333",
+                    color: "#ffffff",
                     padding: `${8 * scale}px ${14 * scale}px`,
                     borderRadius: 6,
                     letterSpacing: "0.5px",

@@ -1,7 +1,12 @@
-import { spring, useCurrentFrame, useVideoConfig } from "remotion";
-import React from 'react';
+import { useCurrentFrame, spring, useVideoConfig } from "remotion";
 
-export const AnimatedText: React.FC<{ text: string, style?: React.CSSProperties }> = ({ text, style = {} }) => {
+export const AnimatedText = ({
+  text,
+  mode,
+}: {
+  text: string;
+  mode: "intro-word" | "spec";
+}) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
@@ -10,29 +15,31 @@ export const AnimatedText: React.FC<{ text: string, style?: React.CSSProperties 
     fps,
     from: 0,
     to: 1,
-    durationInFrames: 25,
+    durationInFrames: 6,
   });
 
-  const translateY = spring({
+  const scale = spring({
     frame,
     fps,
-    from: 30,
-    to: 0,
+    from: 0.96,
+    to: 1,
+    durationInFrames: 12,
   });
+
+  const isIntro = mode === "intro-word";
 
   return (
     <div
       style={{
-        fontSize: 100,
-        fontWeight: 900,
-        lineHeight: 1.3,
-        color: "white",
-        textShadow: "0 6px 30px rgba(0,0,0,0.6)",
-        opacity,
-        transform: `translateY(${translateY}px)`,
-        maxWidth: 1400,
+        fontSize: isIntro ? 78 : 64,
+        fontWeight: isIntro ? 800 : 500,
+        color: isIntro ? "#00FFD1" : "#FFFFFF",
         textAlign: "center",
-        ...style // Merged additional style properties
+        marginTop: "42%",
+        letterSpacing: isIntro ? "1px" : "0px",
+        opacity,
+        transform: `scale(${scale})`,
+        padding: "0 120px",
       }}
     >
       {text}

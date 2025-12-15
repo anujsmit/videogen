@@ -1,0 +1,588 @@
+{
+  "model": "Samsung Galaxy S25 Ultra",
+  "audio": "audio/samsung-galaxy-s25-ultra.mp3",
+  "timeline": [
+    {
+      "type": "intro-word",
+      "text": "The",
+      "start": 0,
+      "end": 0.38
+    },
+    {
+      "type": "intro-word",
+      "text": "Samsung",
+      "start": 0.38,
+      "end": 0.76
+    },
+    {
+      "type": "intro-word",
+      "text": "Galaxy",
+      "start": 0.76,
+      "end": 1.14
+    },
+    {
+      "type": "intro-word",
+      "text": "S25",
+      "start": 1.14,
+      "end": 1.52
+    },
+    {
+      "type": "intro-word",
+      "text": "Ultra",
+      "start": 1.52,
+      "end": 1.9
+    },
+    {
+      "type": "intro-word",
+      "text": "is",
+      "start": 1.9,
+      "end": 2.28
+    },
+    {
+      "type": "intro-word",
+      "text": "built",
+      "start": 2.28,
+      "end": 2.66
+    },
+    {
+      "type": "intro-word",
+      "text": "for",
+      "start": 2.66,
+      "end": 3.04
+    },
+    {
+      "type": "intro-word",
+      "text": "users",
+      "start": 3.04,
+      "end": 3.42
+    },
+    {
+      "type": "intro-word",
+      "text": "who",
+      "start": 3.42,
+      "end": 3.8
+    },
+    {
+      "type": "intro-word",
+      "text": "want",
+      "start": 3.8,
+      "end": 4.18
+    },
+    {
+      "type": "intro-word",
+      "text": "the",
+      "start": 4.18,
+      "end": 4.56
+    },
+    {
+      "type": "intro-word",
+      "text": "absolute",
+      "start": 4.56,
+      "end": 4.94
+    },
+    {
+      "type": "intro-word",
+      "text": "best",
+      "start": 4.94,
+      "end": 5.32
+    },
+    {
+      "type": "intro-word",
+      "text": "from",
+      "start": 5.32,
+      "end": 5.7
+    },
+    {
+      "type": "intro-word",
+      "text": "an",
+      "start": 5.7,
+      "end": 6.08
+    },
+    {
+      "type": "intro-word",
+      "text": "Android",
+      "start": 6.08,
+      "end": 6.46
+    },
+    {
+      "type": "intro-word",
+      "text": "flagship.",
+      "start": 6.46,
+      "end": 6.84
+    },
+    {
+      "type": "intro-word",
+      "text": "Powered",
+      "start": 6.84,
+      "end": 7.22
+    },
+    {
+      "type": "intro-word",
+      "text": "by",
+      "start": 7.22,
+      "end": 7.6
+    },
+    {
+      "type": "intro-word",
+      "text": "a",
+      "start": 7.6,
+      "end": 7.98
+    },
+    {
+      "type": "intro-word",
+      "text": "next-generation",
+      "start": 7.98,
+      "end": 8.36
+    },
+    {
+      "type": "intro-word",
+      "text": "processor,",
+      "start": 8.36,
+      "end": 8.74
+    },
+    {
+      "type": "intro-word",
+      "text": "it",
+      "start": 8.74,
+      "end": 9.12
+    },
+    {
+      "type": "intro-word",
+      "text": "delivers",
+      "start": 9.12,
+      "end": 9.5
+    },
+    {
+      "type": "intro-word",
+      "text": "smooth",
+      "start": 9.5,
+      "end": 9.88
+    },
+    {
+      "type": "intro-word",
+      "text": "performance",
+      "start": 9.88,
+      "end": 10.26
+    },
+    {
+      "type": "intro-word",
+      "text": "for",
+      "start": 10.26,
+      "end": 10.64
+    },
+    {
+      "type": "intro-word",
+      "text": "gaming,",
+      "start": 10.64,
+      "end": 11.02
+    },
+    {
+      "type": "intro-word",
+      "text": "multitasking,",
+      "start": 11.02,
+      "end": 11.4
+    },
+    {
+      "type": "intro-word",
+      "text": "and",
+      "start": 11.4,
+      "end": 11.78
+    },
+    {
+      "type": "intro-word",
+      "text": "AI",
+      "start": 11.78,
+      "end": 12.16
+    },
+    {
+      "type": "intro-word",
+      "text": "features.",
+      "start": 12.16,
+      "end": 12.54
+    },
+    {
+      "type": "intro-word",
+      "text": "The",
+      "start": 12.54,
+      "end": 12.92
+    },
+    {
+      "type": "intro-word",
+      "text": "large",
+      "start": 12.92,
+      "end": 13.3
+    },
+    {
+      "type": "intro-word",
+      "text": "6.9-inch",
+      "start": 13.3,
+      "end": 13.68
+    },
+    {
+      "type": "intro-word",
+      "text": "Dynamic",
+      "start": 13.68,
+      "end": 14.06
+    },
+    {
+      "type": "intro-word",
+      "text": "AMOLED",
+      "start": 14.06,
+      "end": 14.44
+    },
+    {
+      "type": "intro-word",
+      "text": "display",
+      "start": 14.44,
+      "end": 14.82
+    },
+    {
+      "type": "intro-word",
+      "text": "offers",
+      "start": 14.82,
+      "end": 15.2
+    },
+    {
+      "type": "intro-word",
+      "text": "ultra-smooth",
+      "start": 15.2,
+      "end": 15.58
+    },
+    {
+      "type": "intro-word",
+      "text": "scrolling",
+      "start": 15.58,
+      "end": 15.96
+    },
+    {
+      "type": "intro-word",
+      "text": "and",
+      "start": 15.96,
+      "end": 16.34
+    },
+    {
+      "type": "intro-word",
+      "text": "excellent",
+      "start": 16.34,
+      "end": 16.72
+    },
+    {
+      "type": "intro-word",
+      "text": "outdoor",
+      "start": 16.72,
+      "end": 17.1
+    },
+    {
+      "type": "intro-word",
+      "text": "visibility.",
+      "start": 17.1,
+      "end": 17.48
+    },
+    {
+      "type": "intro-word",
+      "text": "Its",
+      "start": 17.48,
+      "end": 17.86
+    },
+    {
+      "type": "intro-word",
+      "text": "200-megapixel",
+      "start": 17.86,
+      "end": 18.24
+    },
+    {
+      "type": "intro-word",
+      "text": "camera",
+      "start": 18.24,
+      "end": 18.62
+    },
+    {
+      "type": "intro-word",
+      "text": "system",
+      "start": 18.62,
+      "end": 19
+    },
+    {
+      "type": "intro-word",
+      "text": "is",
+      "start": 19,
+      "end": 19.38
+    },
+    {
+      "type": "intro-word",
+      "text": "designed",
+      "start": 19.38,
+      "end": 19.76
+    },
+    {
+      "type": "intro-word",
+      "text": "for",
+      "start": 19.76,
+      "end": 20.14
+    },
+    {
+      "type": "intro-word",
+      "text": "professional-level",
+      "start": 20.14,
+      "end": 20.52
+    },
+    {
+      "type": "intro-word",
+      "text": "photography,",
+      "start": 20.52,
+      "end": 20.9
+    },
+    {
+      "type": "intro-word",
+      "text": "capturing",
+      "start": 20.9,
+      "end": 21.28
+    },
+    {
+      "type": "intro-word",
+      "text": "sharp",
+      "start": 21.28,
+      "end": 21.66
+    },
+    {
+      "type": "intro-word",
+      "text": "detail",
+      "start": 21.66,
+      "end": 22.04
+    },
+    {
+      "type": "intro-word",
+      "text": "and",
+      "start": 22.04,
+      "end": 22.42
+    },
+    {
+      "type": "intro-word",
+      "text": "powerful",
+      "start": 22.42,
+      "end": 22.8
+    },
+    {
+      "type": "intro-word",
+      "text": "zoom.",
+      "start": 22.8,
+      "end": 23.18
+    },
+    {
+      "type": "intro-word",
+      "text": "With",
+      "start": 23.18,
+      "end": 23.56
+    },
+    {
+      "type": "intro-word",
+      "text": "a",
+      "start": 23.56,
+      "end": 23.94
+    },
+    {
+      "type": "intro-word",
+      "text": "reliable",
+      "start": 23.94,
+      "end": 24.32
+    },
+    {
+      "type": "intro-word",
+      "text": "5000mAh",
+      "start": 24.32,
+      "end": 24.7
+    },
+    {
+      "type": "intro-word",
+      "text": "battery,",
+      "start": 24.7,
+      "end": 25.08
+    },
+    {
+      "type": "intro-word",
+      "text": "fast",
+      "start": 25.08,
+      "end": 25.46
+    },
+    {
+      "type": "intro-word",
+      "text": "charging,",
+      "start": 25.46,
+      "end": 25.84
+    },
+    {
+      "type": "intro-word",
+      "text": "and",
+      "start": 25.84,
+      "end": 26.22
+    },
+    {
+      "type": "intro-word",
+      "text": "Samsung’s",
+      "start": 26.22,
+      "end": 26.6
+    },
+    {
+      "type": "intro-word",
+      "text": "refined",
+      "start": 26.6,
+      "end": 26.98
+    },
+    {
+      "type": "intro-word",
+      "text": "AI",
+      "start": 26.98,
+      "end": 27.36
+    },
+    {
+      "type": "intro-word",
+      "text": "experience",
+      "start": 27.36,
+      "end": 27.74
+    },
+    {
+      "type": "intro-word",
+      "text": "with",
+      "start": 27.74,
+      "end": 28.12
+    },
+    {
+      "type": "intro-word",
+      "text": "S-Pen",
+      "start": 28.12,
+      "end": 28.5
+    },
+    {
+      "type": "intro-word",
+      "text": "support,",
+      "start": 28.5,
+      "end": 28.88
+    },
+    {
+      "type": "intro-word",
+      "text": "the",
+      "start": 28.88,
+      "end": 29.26
+    },
+    {
+      "type": "intro-word",
+      "text": "Galaxy",
+      "start": 29.26,
+      "end": 29.64
+    },
+    {
+      "type": "intro-word",
+      "text": "S25",
+      "start": 29.64,
+      "end": 30.02
+    },
+    {
+      "type": "intro-word",
+      "text": "Ultra",
+      "start": 30.02,
+      "end": 30.4
+    },
+    {
+      "type": "intro-word",
+      "text": "stands",
+      "start": 30.4,
+      "end": 30.78
+    },
+    {
+      "type": "intro-word",
+      "text": "out",
+      "start": 30.78,
+      "end": 31.16
+    },
+    {
+      "type": "intro-word",
+      "text": "as",
+      "start": 31.16,
+      "end": 31.54
+    },
+    {
+      "type": "intro-word",
+      "text": "one",
+      "start": 31.54,
+      "end": 31.92
+    },
+    {
+      "type": "intro-word",
+      "text": "of",
+      "start": 31.92,
+      "end": 32.3
+    },
+    {
+      "type": "intro-word",
+      "text": "the",
+      "start": 32.3,
+      "end": 32.68
+    },
+    {
+      "type": "intro-word",
+      "text": "most",
+      "start": 32.68,
+      "end": 33.06
+    },
+    {
+      "type": "intro-word",
+      "text": "complete",
+      "start": 33.06,
+      "end": 33.44
+    },
+    {
+      "type": "intro-word",
+      "text": "premium",
+      "start": 33.44,
+      "end": 33.82
+    },
+    {
+      "type": "intro-word",
+      "text": "smartphones",
+      "start": 33.82,
+      "end": 34.2
+    },
+    {
+      "type": "intro-word",
+      "text": "of",
+      "start": 34.2,
+      "end": 34.58
+    },
+    {
+      "type": "intro-word",
+      "text": "2025.",
+      "start": 34.58,
+      "end": 34.96
+    },
+    {
+      "type": "spec",
+      "text": "Display. An expansive, ultra-bright screen with a 144Hz refresh rate and improved anti-reflective coating for outdoor visibility.",
+      "start": 35.56,
+      "end": 42.1
+    },
+    {
+      "type": "spec",
+      "text": "Camera. A professional-grade sensor capable of 8K video and incredible 100x Space Zoom with AI-driven stabilization.",
+      "start": 42.1,
+      "end": 48.25
+    },
+    {
+      "type": "spec",
+      "text": "Battery. Optimized for long-lasting performance with 65W super-fast wired charging support.",
+      "start": 48.25,
+      "end": 52.48
+    },
+    {
+      "type": "spec",
+      "text": "RAM. 16GB",
+      "start": 52.48,
+      "end": 53.38
+    },
+    {
+      "type": "spec",
+      "text": "Storage. 512GB",
+      "start": 53.38,
+      "end": 54.28
+    }
+  ]
+}
