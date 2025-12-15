@@ -1,0 +1,11 @@
+{
+  "model": "Samsung Galaxy S26 5G",
+  "specs": [
+    { "label": "Display", "value": "6.8-inch AMOLED, 120Hz" },
+    { "label": "Processor", "value": "Snapdragon 8 Gen 4" },
+    { "label": "Camera", "value": "50MP Main Camera" },
+    { "label": "Battery", "value": "5000mAh, All-day Use" },
+    { "label": "RAM", "value": "12GB" },
+    { "label": "Storage", "value": "256GB" }
+  ]
+}
